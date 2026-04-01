@@ -1,0 +1,67 @@
+body {
+    background: #f5f5f5;
+    transition: 0.3s;
+    margin: 0px;
+    height: 100%;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.photo-container {
+    padding: 20px;
+    background: #e8dfc7;
+}
+
+.dark-mode .photo-container {
+    background: #333;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.photo-card {
+    position: relative;
+    border: 2px solid #007bff;
+    cursor: pointer;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.photo-card input {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.editor {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.emoji {
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
